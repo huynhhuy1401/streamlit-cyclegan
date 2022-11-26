@@ -44,7 +44,6 @@ if uploaded_file is not None:
      else:
           transformed = gA(trans(image).unsqueeze(0))
      out_img = tensor2im(transformed)
-     save_image(out_img, "out.jpg")
 
 
      col1, col2 = st.columns(2)
