@@ -18,7 +18,7 @@ mode = st.radio(
     ('Not Blond To Blond', 'Blond to Not blond'))
 
 
-uploaded_file = st.file_uploader("Choose an image with black hair")
+uploaded_file = st.file_uploader("Choose an image")
 device =  torch.device("cpu")
 
 gB = define_G(3, 3, 64, "resnet_9blocks", norm="instance")
